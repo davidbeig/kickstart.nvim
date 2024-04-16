@@ -214,6 +214,7 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
 vim.api.nvim_set_keymap('n', '<C-h>', ':NvimTreeToggle<cr>', { silent = true, noremap = true })
+vim.api.nvim_set_keymap('n', '<C-s>', ':NvimTreeFindFile<cr>', { silent = true, noremap = true })
 
 -- [[ Configure and install plugins ]]
 --
