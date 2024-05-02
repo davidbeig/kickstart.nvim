@@ -9,6 +9,12 @@ return {
     require('nvim-tree').setup {
       view = {
         side = 'right',
+        adaptive_size = true,
+      },
+      git = {
+        enable = true,
+        ignore = false,
+        timeout = 500,
       },
     }
   end,
